@@ -9,7 +9,11 @@ async function verifyToken(event) {
     try {
         event.preventDefault();
         const formData = new FormData(event.target);
-        const token = formData.get('token');
+        let token = formData.get('token');
+
+        if(token.includes('https')) {
+            token = token.slice(token.lastIndexOf('=') + 1);
+        }
 
         const response = await fetch(`${API_URL}`, {
             method: 'POST',

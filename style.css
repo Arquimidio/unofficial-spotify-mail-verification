@@ -33,11 +33,24 @@ h1 {
 
 #token-form {
     display: flex;
+    align-items: flex-end;
     gap: 6px;
 }
 
 #explanation-text {
     max-width: 400px;
     color: rgb(197, 197, 197);
+}
+.control-container {
+    flex-grow: 1;
+}
+
+input {
+    flex-grow: 1;
+}
+
+small {
+    color: rgb(173, 173, 173);
+    font-size: 11px;
 }
 

@@ -13,7 +13,11 @@
             <h1 class="text-success">Unofficial Spotify E-Mail Verifier</h1>
             <div>
                 <form id="token-form">
-                    <input placeholder="Token from email..." class="form-control" name="token" />
+                    <div class="control-container">
+                        <label for="token" class="text-success">E-mail Token</label>
+                        <small>(Paste the token or the entire link you got on email)</small>
+                        <input id="token" placeholder="e.g: PMfcgzJxSlPFfFzkufthnvZDHNKZQrJM" class="form-control w-100" name="token" />
+                    </div>
                     <button class="btn btn-success" type="submit">Verify</button>
                 </form>
             </div>
@@ -30,6 +34,5 @@
         </div>
     </main>
     <script src="./script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
