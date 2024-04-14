@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unnoficial Spotify E-Mail Verifier</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
 <body>
     <main>
@@ -14,21 +12,25 @@
             <div>
                 <form id="token-form">
                     <div class="control-container">
-                        <label for="token" class="text-success">E-mail Token</label>
-                        <small>(Paste the token or the entire link you got on email)</small>
-                        <input id="token" placeholder="e.g: PMfcgzJxSlPFfFzkufthnvZDHNKZQrJM" class="form-control w-100" name="token" />
+                        <div>
+                            <label for="token" class="text-success">E-mail Token</label>
+                            <small>(Paste the token or the entire link you got on email)</small>
+                        </div>
+                        <div class="input-container">
+                            <input id="token" placeholder="e.g: PMfcgzJxSlPFfFzkufthnvZDHNKZQrJM" class="form-control w-100" name="token" />
+                            <button class="btn btn-success" type="submit">Verify</button>
+                        </div>  
                     </div>
-                    <button class="btn btn-success" type="submit">Verify</button>
                 </form>
+                <div id="status-display"></div>
             </div>
-            <div id="status-display"></div>
             <div id="explanation-text">
                 This e-mail verifier was created to enable users to have their accounts verified while the official
                 page isn't verifying due to errors. The code is on 
-                <a href="https://github.com/Arquimidio/spotify-mail-verification" _target="blank">
+                <a href="https://github.com/Arquimidio/spotify-mail-verification" target="_blank">
                     Github
                 </a> and also accessible on the site developer
-                tools if you have any concerns!
+                tools if you have any concerns! For more instructions, click the Github link
             </div>
             
         </div>
